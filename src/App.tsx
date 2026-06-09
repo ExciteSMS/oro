@@ -884,7 +884,7 @@ export default function App() {
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/5] border border-gold/40 overflow-hidden group">
               <img
-                src="/assets/images/portfolio/brendon_wiggill.png"
+                src="/assets/images/portfolio/minimal-2.jpg"
                 alt="Brendon Carl Wiggill - Chief Operating Officer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
