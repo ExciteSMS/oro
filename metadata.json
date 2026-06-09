@@ -1,0 +1,6 @@
+{
+  "name": "Oro Puro",
+  "description": "The official landing page for Oro Puro Gold Refinery, specializing in doré and raw gold refining, precision assaying, bullion production, and responsible sourcing in Lusaka, Zambia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
