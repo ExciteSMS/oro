@@ -969,8 +969,8 @@ export default function App() {
               {[
                 ["Address", "Chamba Valley, Zambia"],
                 ["Phone", "+260 968324831"],
-                ["Email", "info@oropuro.co.zm"],
-                ["Website", "www.oropuro.co.zm"],
+                ["Email", "info@oropurorefinery.com"],
+                ["Website", "www.oropurorefinery.com"],
               ].map(([k, v]) => (
                 <li key={k} className="flex items-start gap-5 border-b border-border pb-4">
                   <div className="text-[10px] uppercase tracking-[0.3em] text-gold w-20 pt-1">{k}</div>
@@ -1004,9 +1004,9 @@ export default function App() {
             <div className="text-[10px] uppercase tracking-[0.3em] text-gold mb-4">Get In Touch</div>
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>+260 968324831</li>
-              <li>info@oropuro.co.zm</li>
+              <li>info@oropurorefinery.com</li>
               <li>Chamba Valley, Zambia</li>
-              <li>www.oropuro.co.zm</li>
+              <li>www.oropurorefinery.com</li>
             </ul>
           </div>
 
