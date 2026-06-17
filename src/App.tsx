@@ -18,7 +18,18 @@ import {
   ArrowRight,
   Sparkles,
   Award,
-  BookOpen
+  BookOpen,
+  Gem,
+  MapPin,
+  Building2,
+  Factory,
+  ExternalLink,
+  Phone,
+  Mail,
+  ArrowUpRight,
+  Briefcase,
+  Layers,
+  Compass
 } from "lucide-react";
 
 const LOGO = "/assets/images/logo.png";
@@ -29,6 +40,7 @@ const NAV = [
   { href: "#rates", label: "Market Rates" },
   { href: "#services", label: "Services" },
   { href: "#values", label: "Core Values" },
+  { href: "#group", label: "Umbrella Group" },
   { href: "#partners", label: "Partners" },
   { href: "#contact", label: "Contact" },
 ];
@@ -884,7 +896,7 @@ export default function App() {
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/5] border border-gold/40 overflow-hidden group">
               <img
-                src="/assets/images/portfolio/minimal-2.jpg"
+                src="/assets/images/portfolio/brendon_wiggill.png"
                 alt="Brendon Carl Wiggill - Chief Operating Officer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
@@ -947,6 +959,279 @@ export default function App() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* UMBRELLA GROUP (ALTA AY GROUP FLYER LOGIC) */}
+      <section id="group" className="py-28 border-t border-border bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(201,168,76,0.02)_50%,rgba(0,0,0,0)_100%)] relative overflow-hidden">
+        {/* Subtle decorative gold light flare */}
+        <div 
+          aria-hidden
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-10 blur-[100px] pointer-events-none -z-10"
+          style={{ background: "radial-gradient(circle, #c9a84c 0%, transparent 70%)" }}
+        />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          
+          {/* SECTION HEADER */}
+          <div className="text-center mb-16 relative">
+            <span className="eyebrow justify-center">Corporate Group</span>
+            <h2 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              ALTA AY <span className="text-gradient-gold italic">GROUP</span>
+            </h2>
+            <p className="mt-2 text-[11px] md:text-xs font-mono uppercase tracking-[0.35em] text-gold font-bold">
+              Umbrella Companies
+            </p>
+            <div className="mt-6 inline-flex items-center justify-center gap-3 bg-neutral-950/80 border border-gold/20 py-2 px-5 rounded-sm max-w-3xl mx-auto">
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold/50 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-gold"></span>
+              </span>
+              <p className="text-[9.5px] md:text-xs font-mono uppercase tracking-widest text-foreground/80 font-bold leading-relaxed">
+                MINING &bull; TRADING PRECIOUS METALS &bull; REFINERY &bull; INVESTMENTS
+              </p>
+            </div>
+          </div>
+
+          {/* THREE COLUMN GRID - MATCHING THE FLYER COLUMNS EXACTLY */}
+          <div className="grid lg:grid-cols-3 gap-8 items-stretch mb-16">
+            
+            {/* COLUMN 1: ALTAARAS INVESTMENTS & MINING LTD */}
+            <div className="bg-neutral-950/60 border border-gold/15 p-8 flex flex-col justify-between relative group hover:border-gold/40 transition-all duration-300 rounded-sm shadow-xl hover:shadow-gold/5">
+              <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              
+              <div>
+                {/* Custom Elegant Badge style */}
+                <div className="flex justify-center mb-8">
+                  <div className="relative w-16 h-16 flex items-center justify-center">
+                    <div className="absolute inset-0 border border-gold/30 rounded-sm rotate-45 group-hover:rotate-90 transition-all duration-500" />
+                    <div className="absolute inset-1.5 border border-gold/15 rounded-sm rotate-45 group-hover:rotate-[135deg] transition-all duration-500" />
+                    <Layers className="w-5 h-5 text-gold relative z-10" />
+                  </div>
+                </div>
+
+                <div className="text-center mb-6">
+                  <h3 className="font-display text-lg font-bold tracking-wider text-foreground uppercase leading-tight">
+                    ALTAARAS
+                  </h3>
+                  <p className="text-[10px] text-foreground/50 mt-1 uppercase tracking-widest font-sans font-medium">
+                    Investments & Mining Ltd
+                  </p>
+                  <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-4" />
+                  <h4 className="text-[10px] font-bold tracking-[0.2em] text-gold uppercase bg-gold/10 py-1.5 px-4 border border-gold/20 inline-block rounded-sm">
+                    MINING & INVESTMENTS
+                  </h4>
+                </div>
+
+                {/* BULLETS */}
+                <div className="space-y-5 border-t border-border/10 py-6 mb-6">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Briefcase className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Major Project</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal">Greenfields mining development.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Gem className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5 font-bold">Strategic Investments</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal">Mineral resource portfolio.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <MapPin className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Head Office</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal">Lusaka, Zambia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD FOOTER (OFFICE ADDRESS) */}
+              <div className="border-t border-gold/10 pt-5 mt-auto bg-neutral-900/30 p-4 rounded-sm">
+                <div className="text-center font-mono text-[9px] uppercase tracking-[0.25em] text-gold mb-2 font-bold select-none">
+                  * Office Address *
+                </div>
+                <p className="text-xs text-foreground/70 text-center leading-relaxed font-sans font-medium">
+                  Stand No.1556 Office No.505, SUNSHARE TOWER, OLYMPIA KATIMAMULILO Road, Lusaka, Zambia.
+                </p>
+                <p className="text-[10px] text-gold/65 text-center mt-2 font-mono font-medium italic">
+                  (Head Office for ALTAARAS and ALPHA ARAS)
+                </p>
+              </div>
+            </div>
+
+            {/* COLUMN 2: ALTA AY TRADING LLC */}
+            <div className="bg-neutral-950/80 border border-gold/30 p-8 flex flex-col justify-between relative group hover:border-gold/65 transition-all duration-300 rounded-sm shadow-xl shadow-gold/5">
+              <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-gold" />
+              <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-gold" />
+              <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-gold" />
+              <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-gold" />
+
+              <div>
+                <div className="flex justify-center mb-8">
+                  <div className="relative w-16 h-16 flex items-center justify-center">
+                    <div className="absolute inset-0 border border-gold rounded-full animate-spin-slow opacity-60" />
+                    <div className="absolute inset-1.5 border border-gold/25 rounded-full" />
+                    <Compass className="w-5 h-5 text-gold relative z-10" />
+                  </div>
+                </div>
+
+                <div className="text-center mb-6">
+                  <h3 className="font-display text-lg font-black tracking-wider text-gold uppercase leading-tight">
+                    ALTA AY
+                  </h3>
+                  <p className="text-[10px] text-foreground/50 mt-1 uppercase tracking-widest font-bold">
+                    Trading LLC
+                  </p>
+                  <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-4" />
+                  <h4 className="text-[10px] font-bold tracking-[0.2em] text-gold uppercase bg-gold/15 py-1.5 px-4 border border-gold/30 inline-block rounded-sm">
+                    INTERNATIONAL TRADING
+                  </h4>
+                </div>
+
+                {/* BULLETS */}
+                <div className="space-y-5 border-t border-border/10 py-6 mb-6">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Globe className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Global Sourcing</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal">Raw metals, refined bullion.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Coins className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Marketplace Access</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal">Middle East, Asia.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <MapPin className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Head Office</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal font-bold">Dubai, UAE.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD FOOTER (OFFICE ADDRESS) */}
+              <div className="border-t border-gold/30 pt-5 mt-auto bg-gold/5 p-4 rounded-sm border border-gold/10">
+                <div className="text-center font-mono text-[9px] uppercase tracking-[0.25em] text-gold mb-2 font-bold select-none">
+                  * Dubai Office Address *
+                </div>
+                <p className="text-xs text-foreground/80 text-center leading-relaxed font-sans font-bold">
+                  Port Saeed, Showroom 1-024, Dubai, UAE.
+                </p>
+                <p className="text-[10px] text-gold/65 text-center mt-2 font-mono font-medium italic">
+                  (ALTA AY Head Office)
+                </p>
+              </div>
+            </div>
+
+            {/* COLUMN 3: ALPHA ARAS METALS LTD */}
+            <div className="bg-neutral-950/60 border border-gold/15 p-8 flex flex-col justify-between relative group hover:border-gold/40 transition-all duration-300 rounded-sm shadow-xl hover:shadow-gold/5">
+              <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-gold/40 group-hover:border-gold transition-colors duration-300" />
+              <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-gold/40 group-hover:border-gold transition-colors duration-300" />
+
+              <div>
+                <div className="flex justify-center mb-8">
+                  <div className="relative w-16 h-16 flex items-center justify-center">
+                    <div className="absolute inset-0 border border-gold/30 rounded-sm group-hover:scale-110 transition-all duration-300" />
+                    <div className="absolute inset-1.5 border border-gold/15" />
+                    <Building2 className="w-5 h-5 text-gold relative z-10" />
+                  </div>
+                </div>
+
+                <div className="text-center mb-6">
+                  <h3 className="font-display text-lg font-bold tracking-wider text-foreground uppercase leading-tight">
+                    ALPHA ARAS
+                  </h3>
+                  <p className="text-[10px] text-foreground/50 mt-1 uppercase tracking-widest font-sans font-medium">
+                    Metals Ltd
+                  </p>
+                  <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-4" />
+                  <h4 className="text-[10px] font-bold tracking-[0.2em] text-gold uppercase bg-gold/10 py-1.5 px-4 border border-gold/20 inline-block rounded-sm">
+                    PRECIOUS METALS & REFINERY
+                  </h4>
+                </div>
+
+                {/* BULLETS */}
+                <div className="space-y-5 border-t border-border/10 py-6 mb-6">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Flame className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Precision Refining</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal mt-0.5">Gold, Silver, Platinum Group.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Briefcase className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Head Office</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal font-bold">Lusaka, Zambia.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-gold/5 border border-gold/25 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <Factory className="w-3 h-3 text-gold" />
+                    </div>
+                    <div>
+                      <h5 className="font-sans font-bold text-[11px] text-foreground uppercase tracking-wider select-none mb-0.5">Refinery Operations</h5>
+                      <p className="text-sm text-foreground/75 leading-relaxed font-normal">Lusaka, Zambia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD FOOTER (OFFICE ADDRESS) */}
+              <div className="border-t border-gold/10 pt-5 mt-auto bg-neutral-900/30 p-4 rounded-sm">
+                <div className="text-center font-mono text-[9px] uppercase tracking-[0.25em] text-gold mb-2 font-bold select-none">
+                  * Refinery Address *
+                </div>
+                <p className="text-xs text-foreground/70 text-center leading-relaxed font-sans font-medium">
+                  Manchinchi Road, Stand No. 6448, Lusaka, Zambia.
+                </p>
+                <p className="text-[10px] text-gold/65 text-center mt-2 font-mono font-medium italic">
+                  (ALPHA ARAS Refinery & Precious Metals Office)
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+
         </div>
       </section>
 
